@@ -97,8 +97,12 @@ func alp(i, a int) int {
 	}
 }
 func main() {
-	i := 2
-	a := 1000
+	var i int
+	var a int
+	fmt.Print("enter the speed =")
+	fmt.Scan(&i)
+	fmt.Print("enter artificial limit=")
+	fmt.Scan(&a)
 	fmt.Println("the success rate is --------------->", successrate(i))
 	fmt.Println("the production rate per hour is --->", prph(i))
 	fmt.Println("the production rate per minute is ->", prpm(i))
